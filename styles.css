@@ -7,13 +7,7 @@ body {
     background-color: #fff;
 }
 
-ul {
-
-    list-style-type: none;
-}
-
 li {
-    float: left;
     margin: 30px;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 18px;
@@ -26,6 +20,10 @@ p {
 a {
     text-decoration: none;
     color: black;
+}
+
+.mainNav {
+    list-style-type: none;
 }
 
 .rowNav {
@@ -41,7 +39,7 @@ a {
 
 .columnTitle {
     flex-direction: column;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .columnLandings {
@@ -54,10 +52,16 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-items: center;
     align-items: center;
+    margin-top: 100px;
 }
 
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    margin-top: 150px;
+}
+
+.creatingSite {
+
 }
