@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "PT Sans Narrow";
+    src: url("https://fonts.google.com/specimen/PT+Sans+Narrow");
+}
+
+body {
+    background-color: #fff;
+}
+
+ul {
+
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    margin: 30px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 18px;
+}
+
+p {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.rowNav {
+    display: grid;
+    grid-template-columns: 1fr 40px 1fr;
+}
+
+.rowTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.columnTitle {
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.columnLandings {
+    flex-direction: column;
+    margin-top: -100px;
+}
+
+.rowAboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
