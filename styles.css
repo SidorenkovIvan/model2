@@ -7,12 +7,6 @@ body {
     background-color: #fff;
 }
 
-li {
-    margin: 30px;
-    font-family: "PT Sans Narrow", sans-serif;
-    font-size: 18px;
-}
-
 p {
     font-family: "PT Sans Narrow", sans-serif;
 }
@@ -24,6 +18,13 @@ a {
 
 .mainNav {
     list-style-type: none;
+}
+
+.mainLi {
+    margin: 50px 40px 0 40px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    float: left;
 }
 
 .rowNav {
@@ -44,7 +45,7 @@ a {
 
 .columnLandings {
     flex-direction: column;
-    margin-top: -100px;
+    margin-top: -60px;
 }
 
 .rowAboutUs {
