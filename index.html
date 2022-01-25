@@ -6,22 +6,21 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
 <header>
     <div class="rowNav">
         <div>
-            <img src="assets/images/spot1.png" alt="spot" style="margin: -10px">
-            <img src="assets/images/logo.png" alt="logo" style="position: absolute; margin: 50px 0 0 -180px">
-            <img src="assets/images/shadow.png" alt="shadow" style="position: absolute; margin: 50px 0 0 -220px">
+            <img src="assets/images/spotLogo.png" alt="spot" class="spotLogo">
+            <img src="assets/images/logo.png" alt="logo" class="logo">
+            <img src="assets/images/shadow.png" alt="shadow" class="logoShadow">
         </div>
-        <img src="assets/images/spot2.png" style="margin-top: -10px; margin-left: 30px" alt="spot">
-        <nav>
+        <img src="assets/images/spotNav.png" alt="spot" class="spotNav">
+        <nav style="justify-content: flex-end">
             <ul class="mainNav">
                 <li class="mainLi"><a href="#aboutUs">О нас</a></li>
                 <li class="mainLi"><a href="#ourServices">Наши услуги</a></li>
                 <li class="mainLi"><a href="#team">Команда</a></li>
                 <li class="mainLi"><a href="#portfolio">Портфолио</a></li>
-                <li class="mainLi"><a href="#contacts">Контакты</a></li>
+                <li class="mainLi liContacts"><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </div>
@@ -30,100 +29,170 @@
 <main>
     <div class="rowTitle">
         <div class="columnTitle">
-            <img src="assets/images/spot3.png" alt="spot" style="margin: 0 0 -410px -30px">
-            <p style="color: #3BB372; font-size: 24px; margin-bottom: -60px; margin-top: 60px">Tamwyle</p>
-            <p style="font-size: 64px; line-height: 60px">Команда <span style="color: #3BB372">Web</span><br>
+            <img src="assets/images/spotTitle.png" alt="spot" class="spotTitle">
+            <p class="pTamwyle">Tamwyle</p>
+            <p class="pTeamWeb">Команда <span style="color: #3BB372">Web</span><br>
                 Разработчиков</p>
-            <p style="font-size: 28px; margin-top: -40px">Которые изменят твоё предстовление<br> о сайтах и помогут тебе
+            <p class="pTeamWebDescription">Которые изменят твоё предстовление<br> о сайтах и помогут тебе
                 сделать<br> продающий сайт</p>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+            <button class="buttonTelegramAndInstagram"></button>
+            <button class="buttonTelegramAndInstagram"></button>
+            <img src="assets/images/line.png" alt="line" class="buttonTelegramAndInstagram" style="margin-bottom: 15px">
+            <img src="assets/images/buttonTelegram.png" alt="telegram" class="buttonTelegramAndInstagram">
+            <img src="assets/images/buttonInstagram.png" alt="instagram" class="buttonTelegramAndInstagram">
         </div>
 
         <div class="columnLandings">
             <img src="assets/images/landing1.png" alt="landing1">
-            <img src="assets/images/landing2.png" alt="landing2" style="margin: 0 15px 60px 15px">
-            <img src="assets/images/landing3.png" alt="landing3" style="margin-right: 50px">
+            <img src="assets/images/landing2.png" alt="landing2" class="landing2">
+            <img src="assets/images/landing3.png" alt="landing3" class="landing3">
         </div>
     </div>
 
     <div id="aboutUs">
         <img src="assets/images/spot4.png" alt="spot" style="margin: 80px 0 -160px 100px">
-        <p style="margin-left: 150px; font-size: 40px; font-weight: bold">О нас</p>
+        <p class="pAboutUs">О нас</p>
         <div class="rowAboutUs">
             <img src="assets/images/memoji1.png" alt="memoji">
-            <p style="font-size: 20px"><span style="font-size: 28px">Кто мы</span><br><br>Мы новая команда<br>разработчиков,
+            <p class="pAboutUsText"><span style="font-size: 28px">Кто мы</span><br><br>Мы новая команда<br>разработчиков,
                 которые<br>умеють делать своё<br>дело.</p>
             <img src="assets/images/memoji2.png" alt="memoji">
-            <p style="font-size: 20px"><span style="font-size: 28px">Чем занимаемся</span><br><br>Мы занимаемся<br>дизайном
+            <p class="pAboutUsText"><span style="font-size: 28px">Чем занимаемся</span><br><br>Мы занимаемся<br>дизайном
                 сайтов,<br>баннеров. Вёрсткой<br>сайтов и магазинов.</p>
             <img src="assets/images/memoji3.png" alt="memoji">
-            <p style="font-size: 20px"><span style="font-size: 28px">Почему мы</span><br><br>Мы работаем очень<br>качествено
+            <p class="pAboutUsText"><span style="font-size: 28px">Почему мы</span><br><br>Мы работаем очень<br>качествено
                 и в<br>короткие сроки.<br>Процесс видно сразу.</p>
         </div>
     </div>
 
     <div id="ourServices">
-        <p style="margin-right: 150px; margin-top: 150px; font-size: 48px; font-weight: bold; text-align: right">Наши
-            услуги</p>
+        <img src="assets/images/spotOurServices.png" alt="spot" class="spotOurServices">
+        <p class="pOurServices">Наши услуги</p>
         <div class="services">
             <img src="assets/images/laptop1.png" alt="image">
             <div style="display: flex; flex-direction: column">
-                <p>Создание сайта с <span style="color: #3BB372">нуля</span></p>
-                <ul class="creatingSite">
-                    <li>Быстро и красиво оформим дизайн.</li>
-                    <li>Адаптивный дизайн.</li>
-                    <li>Запоминающийся сайт.</li>
-                    <li>Продаваемый и удобный сайт.</li>
-                    <li>Быстрые сроки работы.</li>
-                    <li>Поставим на хост.</li>
-                    <li>Работа с СММ специалистом.</li>
+                <p style="font-size: 42px">Создание сайта с <span style="color: #3BB372">нуля</span></p>
+                <ul class="servicesUl">
+                    <li class="servicesLi"><span class="servicesLiSpan">Быстро и красиво оформим дизайн.</span></li>
+                    <li class="servicesLi"><span class="servicesLiSpan">Адаптивный дизайн.</span></li>
+                    <li class="servicesLi"><span class="servicesLiSpan">Запоминающийся сайт.</span></li>
+                    <li class="servicesLi"><span class="servicesLiSpan">Продаваемый и удобный сайт.</span></li>
+                    <li class="servicesLi"><span class="servicesLiSpan">Быстрые сроки работы.</span></li>
+                    <li class="servicesLi"><span class="servicesLiSpan">Поставим на хост.</span></li>
+                    <li class="servicesLi"><span class="servicesLiSpan">Работа с СММ специалистом.</span></li>
                 </ul>
 
                 <div style="display: flex; flex-direction: row">
-                    <button></button>
-                    <button></button>
+                    <button>Заказать проект</button>
+                    <button>Портфолио</button>
                 </div>
             </div>
             <div style="display: flex; flex-direction: column">
-                <p style="color: #398495">Ребрендинг</p>
-                <ul class="creatingSite">
-                    <li>Быстро и красиво оформим дизайн.</li>
-                    <li>Адаптивный дизайн.</li>
-                    <li>Запоминающийся сайт.</li>
-                    <li>Продаваемый и удобный сайт.</li>
-                    <li>Быстрые сроки работы.</li>
-                    <li>Поставим на хост.</li>
-                    <li>Работа с СММ специалистом.</li>
+                <p style="color: #398495; font-size: 42px">Ребрендинг</p>
+                <ul class="servicesUl">
+                    <li class="servicesLi1"><span class="servicesLiSpan">Сделаем дизайн, продаваемым.</span></li>
+                    <li class="servicesLi1"><span class="servicesLiSpan">Практичным для клиента.</span></li>
+                    <li class="servicesLi1"><span class="servicesLiSpan">Запоминающимся и эффективным.</span></li>
+                    <li class="servicesLi1"><span class="servicesLiSpan">Быстро и качественно проделаная работа.</span>
+                    </li>
+                    <li class="servicesLi1"><span class="servicesLiSpan">Универсальный дизайн с адаптацией.</span></li>
+                    <li class="servicesLi1"><span class="servicesLiSpan">Оптимизация сайта.</span></li>
+                    <li class="servicesLi1"><span class="servicesLiSpan">Возможность работать с СММ специалистом</span>
+                    </li>
                 </ul>
 
                 <div style="display: flex; flex-direction: row">
-                    <button></button>
-                    <button></button>
+                    <button>Заказать проект</button>
+                    <button>Портфолио</button>
                 </div>
             </div>
             <img src="assets/images/laptop2.png" alt="image" style="margin-top: 40px">
-            <div style="display: flex; flex-direction: column; margin: 30px 20px 0 60px; background: #398495; padding: 35px; border-radius: 25px">
-                <p>Верстка сайта</p>
-                <p>Если у вас есть красивый дизайн, наши Front-end и Back-end
+            <div class="servicesText" style="margin: 30px 20px 0 60px; background: #398495">
+                <p style="font-size: 42px">Верстка сайта</p>
+                <p style="margin-top: -20px">Если у вас есть красивый дизайн, наши Front-end и Back-end
                     разработчики могут помочь поставить сайт на ноги в короткие сроки.
                     Хорошо оптимизированый сайт, это всегда важно.</p>
-                <button></button>
+                <button>Заказать проект</button>
             </div>
-            <div style="display: flex; flex-direction: column; margin: 30px 60px 0 20px; background: #3BB372; padding: 35px; border-radius: 25px">
-                <p>Дизайн сайтов, баннеров и тд.</p>
-                <p>Если у вас есть уже умелые Front-end и Back-end разработчики,
+            <div class="servicesText" style="margin: 30px 60px 0 20px; background: #3BB372">
+                <p style="font-size: 42px">Дизайн сайтов, баннеров и тд.</p>
+                <p style="margin-top: -20px">Если у вас есть уже умелые Front-end и Back-end разработчики,
                     мы можем вам предложить сделать красивый и удобный дизайн для
                     вашего сайта/баннера/визитки или даже магазина. Мы поможем решить вашу боль.</p>
-                <button></button>
+                <button>Заказать проект</button>
             </div>
         </div>
     </div>
 
     <div id="team">
-        <p style="margin-left: 150px; margin-top: 150px; font-size: 48px; font-weight: bold">Наша команда</p>
+        <img src="assets/images/spotOurTeam.png" alt="spot" class="spotTeam">
+        <p class="pTeam">Наша команда</p>
+
+    </div>
+
+    <div id="portfolio">
+        <img src="assets/images/spotPortfolio.png" alt="spot" class="spotPortfolio">
+        <p class="pPortfolio">Портфолио</p>
+        <img src="assets/images/rectanglePortfolio.png" alt="rectangle" class="rectanglePortfolio">
+        <p class="rectanglePortfolioText">Портфолио логотипов</p>
+        <div class="portfolioItems">
+            <img src="assets/images/portfolioItem.png" alt="profileItem">
+            <p class="portfolioItemText"><span style="font-size: 36px">Samwyle</span><br><br>Дизайн сайта был
+                опубликован в 2021 году.
+                Сразу после публикации занял 12 место в тренде Figma community.
+                Весь дизайн сайта с адаптацией сделан за 8 часов работы.</p>
+            <img src="assets/images/portfolioItem1.png" alt="profileItem1">
+            <p class="portfolioItemText"><span style="font-size: 36px">Tamwyle</span><br><br>Дизайн был разработан
+                специально для нашей команды.
+                Интуитивный, удобный и не напрягающий дизайн.
+                Сделан дизайн сайта с адаптацией за 6 часов работы.</p>
+        </div>
+    </div>
+
+    <div id="contacts">
+        <img src="assets/images/spotContacts.png" alt="spot" class="spotContacts">
+        <p class="pContacts">Контакты</p>
+        <img src="assets/images/spotAllContacts.png" alt="spot" class="spotAllContacts">
+        <div class="elementsOfContacts">
+            <div class="contactsColumn">
+                <img src="assets/images/logo.png" alt="logo" style="width: 50px">
+                <p>Tamwyle</p>
+                <div class="socialMediasRow">
+                    <img src="assets/images/buttonTelegram.png" alt="tg" style="width: 20px">
+                    <img src="assets/images/buttonInstagram.png" alt="inst" style="width: 20px">
+                </div>
+                <img src="assets/images/line.png" alt="line" style="width: 70px">
+                <p>2021 (c) - Tamwyle</p>
+            </div>
+            <div class="contactsColumn">
+                <p>Наши услуги</p>
+                <p>Сайт с нуля</p>
+                <p>Ребрендинг</p>
+                <p>Дизайн</p>
+                <p>Верстка</p>
+            </div>
+            <div class="contactsColumn">
+                <p>Команда</p>
+                <p>Front-end</p>
+                <p>Back-end</p>
+                <p>Design</p>
+                <p>SMM</p>
+            </div>
+            <div class="contactsColumn">
+                <p>Портфолио</p>
+                <p>Сайты</p>
+                <p>Логотипы</p>
+            </div>
+            <div class="contactsColumn">
+                <p>О нас</p>
+                <p>Найти нас</p>
+            </div>
+            <div class="contactsColumn">
+                <p>Контакты</p>
+                <p>ifrunza36@gmail.com</p>
+                <p>+380982261306</p>
+            </div>
+        </div>
     </div>
 </main>
 </body>
