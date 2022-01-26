@@ -14,13 +14,13 @@
             <img src="assets/images/shadow.png" alt="shadow" class="logoShadow">
         </div>
         <img src="assets/images/spotNav.png" alt="spot" class="spotNav">
-        <nav style="justify-content: flex-end">
-            <ul class="mainNav">
-                <li class="mainLi"><a href="#aboutUs">О нас</a></li>
-                <li class="mainLi"><a href="#ourServices">Наши услуги</a></li>
-                <li class="mainLi"><a href="#team">Команда</a></li>
-                <li class="mainLi"><a href="#portfolio">Портфолио</a></li>
-                <li class="mainLi liContacts"><a href="#contacts">Контакты</a></li>
+        <nav class="navMain">
+            <ul class="ulHeaderNav">
+                <li class="liHeaderNav"><a href="#aboutUs">О нас</a></li>
+                <li class="liHeaderNav"><a href="#ourServices">Наши услуги</a></li>
+                <li class="liHeaderNav"><a href="#team">Команда</a></li>
+                <li class="liHeaderNav"><a href="#portfolio">Портфолио</a></li>
+                <li class="liHeaderNav liContact"><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
     </div>
@@ -31,17 +31,16 @@
         <div class="columnTitle">
             <img src="assets/images/spotTitle.png" alt="spot" class="spotTitle">
             <p class="pTamwyle">Tamwyle</p>
-            <p class="pTeamWeb">Команда <span style="color: #3BB372">Web</span><br>
+            <p class="pTeamWeb">Команда <span class="greenColorForText">Web</span><br>
                 Разработчиков</p>
             <p class="pTeamWebDescription">Которые изменят твоё предстовление<br> о сайтах и помогут тебе
                 сделать<br> продающий сайт</p>
-            <button class="buttonTelegramAndInstagram"></button>
-            <button class="buttonTelegramAndInstagram"></button>
-            <img src="assets/images/line.png" alt="line" class="buttonTelegramAndInstagram" style="margin-bottom: 15px">
+            <button class="buttonOrderProject">Заказать проект</button>
+            <button class="buttonPortfolio">Портфолио</button>
+            <img src="assets/images/line.png" alt="line">
             <img src="assets/images/buttonTelegram.png" alt="telegram" class="buttonTelegramAndInstagram">
             <img src="assets/images/buttonInstagram.png" alt="instagram" class="buttonTelegramAndInstagram">
         </div>
-
         <div class="columnLandings">
             <img src="assets/images/landing1.png" alt="landing1">
             <img src="assets/images/landing2.png" alt="landing2" class="landing2">
@@ -50,17 +49,17 @@
     </div>
 
     <div id="aboutUs">
-        <img src="assets/images/spot4.png" alt="spot" style="margin: 80px 0 -160px 100px">
+        <img src="assets/images/spotAboutUs.png" alt="spot" class="spotAboutUs">
         <p class="pAboutUs">О нас</p>
         <div class="rowAboutUs">
             <img src="assets/images/memoji1.png" alt="memoji">
-            <p class="pAboutUsText"><span style="font-size: 28px">Кто мы</span><br><br>Мы новая команда<br>разработчиков,
+            <p class="pAboutUsText"><span class="fontSize28">Кто мы</span><br><br>Мы новая команда<br>разработчиков,
                 которые<br>умеють делать своё<br>дело.</p>
             <img src="assets/images/memoji2.png" alt="memoji">
-            <p class="pAboutUsText"><span style="font-size: 28px">Чем занимаемся</span><br><br>Мы занимаемся<br>дизайном
+            <p class="pAboutUsText"><span class="fontSize28">Чем занимаемся</span><br><br>Мы занимаемся<br>дизайном
                 сайтов,<br>баннеров. Вёрсткой<br>сайтов и магазинов.</p>
             <img src="assets/images/memoji3.png" alt="memoji">
-            <p class="pAboutUsText"><span style="font-size: 28px">Почему мы</span><br><br>Мы работаем очень<br>качествено
+            <p class="pAboutUsText"><span class="fontSize28">Почему мы</span><br><br>Мы работаем очень<br>качествено
                 и в<br>короткие сроки.<br>Процесс видно сразу.</p>
         </div>
     </div>
@@ -70,53 +69,51 @@
         <p class="pOurServices">Наши услуги</p>
         <div class="services">
             <img src="assets/images/laptop1.png" alt="image">
-            <div style="display: flex; flex-direction: column">
-                <p style="font-size: 42px">Создание сайта с <span style="color: #3BB372">нуля</span></p>
+            <div class="flexColumn">
+                <p class="fontSize42">Создание сайта с <span class="greenColorForText">нуля</span></p>
                 <ul class="servicesUl">
-                    <li class="servicesLi"><span class="servicesLiSpan">Быстро и красиво оформим дизайн.</span></li>
-                    <li class="servicesLi"><span class="servicesLiSpan">Адаптивный дизайн.</span></li>
-                    <li class="servicesLi"><span class="servicesLiSpan">Запоминающийся сайт.</span></li>
-                    <li class="servicesLi"><span class="servicesLiSpan">Продаваемый и удобный сайт.</span></li>
-                    <li class="servicesLi"><span class="servicesLiSpan">Быстрые сроки работы.</span></li>
-                    <li class="servicesLi"><span class="servicesLiSpan">Поставим на хост.</span></li>
-                    <li class="servicesLi"><span class="servicesLiSpan">Работа с СММ специалистом.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Быстро и красиво оформим дизайн.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Адаптивный дизайн.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Запоминающийся сайт.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Продаваемый и удобный сайт.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Быстрые сроки работы.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Поставим на хост.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Работа с СММ специалистом.</span></li>
                 </ul>
-
-                <div style="display: flex; flex-direction: row">
+                <div class="flexRow">
                     <button>Заказать проект</button>
                     <button>Портфолио</button>
                 </div>
             </div>
-            <div style="display: flex; flex-direction: column">
-                <p style="color: #398495; font-size: 42px">Ребрендинг</p>
+            <div class="flexColumn">
+                <p class="blueColorForText fontSize42">Ребрендинг</p>
                 <ul class="servicesUl">
-                    <li class="servicesLi1"><span class="servicesLiSpan">Сделаем дизайн, продаваемым.</span></li>
-                    <li class="servicesLi1"><span class="servicesLiSpan">Практичным для клиента.</span></li>
-                    <li class="servicesLi1"><span class="servicesLiSpan">Запоминающимся и эффективным.</span></li>
-                    <li class="servicesLi1"><span class="servicesLiSpan">Быстро и качественно проделаная работа.</span>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Сделаем дизайн, продаваемым.</span></li>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Практичным для клиента.</span></li>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Запоминающимся и эффективным.</span></li>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Быстро и качественно проделаная работа.</span>
                     </li>
-                    <li class="servicesLi1"><span class="servicesLiSpan">Универсальный дизайн с адаптацией.</span></li>
-                    <li class="servicesLi1"><span class="servicesLiSpan">Оптимизация сайта.</span></li>
-                    <li class="servicesLi1"><span class="servicesLiSpan">Возможность работать с СММ специалистом</span>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Универсальный дизайн с адаптацией.</span></li>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Оптимизация сайта.</span></li>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Возможность работать с СММ специалистом</span>
                     </li>
                 </ul>
-
-                <div style="display: flex; flex-direction: row">
+                <div class="flexRow">
                     <button>Заказать проект</button>
                     <button>Портфолио</button>
                 </div>
             </div>
-            <img src="assets/images/laptop2.png" alt="image" style="margin-top: 40px">
-            <div class="servicesText" style="margin: 30px 20px 0 60px; background: #398495">
-                <p style="font-size: 42px">Верстка сайта</p>
-                <p style="margin-top: -20px">Если у вас есть красивый дизайн, наши Front-end и Back-end
+            <img src="assets/images/laptop2.png" alt="image" class="imageLaptop2">
+            <div class="servicesText servicesBanner">
+                <p class="fontSize42">Верстка сайта</p>
+                <p class="servicesTextMargin">Если у вас есть красивый дизайн, наши Front-end и Back-end
                     разработчики могут помочь поставить сайт на ноги в короткие сроки.
                     Хорошо оптимизированый сайт, это всегда важно.</p>
                 <button>Заказать проект</button>
             </div>
-            <div class="servicesText" style="margin: 30px 60px 0 20px; background: #3BB372">
-                <p style="font-size: 42px">Дизайн сайтов, баннеров и тд.</p>
-                <p style="margin-top: -20px">Если у вас есть уже умелые Front-end и Back-end разработчики,
+            <div class="servicesText servicesBanner1">
+                <p class="fontSize42">Дизайн сайтов, баннеров и тд.</p>
+                <p class="servicesTextMargin">Если у вас есть уже умелые Front-end и Back-end разработчики,
                     мы можем вам предложить сделать красивый и удобный дизайн для
                     вашего сайта/баннера/визитки или даже магазина. Мы поможем решить вашу боль.</p>
                 <button>Заказать проект</button>
@@ -127,7 +124,6 @@
     <div id="team">
         <img src="assets/images/spotOurTeam.png" alt="spot" class="spotTeam">
         <p class="pTeam">Наша команда</p>
-
     </div>
 
     <div id="portfolio">
@@ -137,63 +133,75 @@
         <p class="rectanglePortfolioText">Портфолио логотипов</p>
         <div class="portfolioItems">
             <img src="assets/images/portfolioItem.png" alt="profileItem">
-            <p class="portfolioItemText"><span style="font-size: 36px">Samwyle</span><br><br>Дизайн сайта был
+            <p class="portfolioItemText"><span class="fontSize36">Samwyle</span><br><br>Дизайн сайта был
                 опубликован в 2021 году.
-                Сразу после публикации занял 12 место в тренде Figma community.
+                Сразу после публикации занял 12 место в тренде Figma community.<br>
                 Весь дизайн сайта с адаптацией сделан за 8 часов работы.</p>
             <img src="assets/images/portfolioItem1.png" alt="profileItem1">
-            <p class="portfolioItemText"><span style="font-size: 36px">Tamwyle</span><br><br>Дизайн был разработан
-                специально для нашей команды.
+            <p class="portfolioItemText"><span class="fontSize36">Tamwyle</span><br><br>Дизайн был разработан
+                специально для нашей команды.<br>
                 Интуитивный, удобный и не напрягающий дизайн.
                 Сделан дизайн сайта с адаптацией за 6 часов работы.</p>
         </div>
     </div>
 
-    <div id="contacts">
-        <img src="assets/images/spotContacts.png" alt="spot" class="spotContacts">
-        <p class="pContacts">Контакты</p>
-        <img src="assets/images/spotAllContacts.png" alt="spot" class="spotAllContacts">
-        <div class="elementsOfContacts">
-            <div class="contactsColumn">
-                <img src="assets/images/logo.png" alt="logo" style="width: 50px">
-                <p>Tamwyle</p>
-                <div class="socialMediasRow">
-                    <img src="assets/images/buttonTelegram.png" alt="tg" style="width: 20px">
-                    <img src="assets/images/buttonInstagram.png" alt="inst" style="width: 20px">
+    <footer>
+        <div id="contacts">
+            <img src="assets/images/spotContacts.png" alt="spot" class="spotContacts">
+            <p class="pContacts">Контакты</p>
+            <img src="assets/images/spotAllContacts.png" alt="spot" class="spotAllContacts">
+            <div class="elementsOfContacts">
+                <div class="contactsColumn contactsFirstColumn">
+                    <img src="assets/images/logo.png" alt="logo" class="footerLogoWidth">
+                    <p class="tamwyleContacts">Tamwyle</p>
+                    <div class="socialMediasRow">
+                        <img src="assets/images/buttonTelegram.png" alt="tg" class="socialMediaElement">
+                        <img src="assets/images/buttonInstagram.png" alt="inst" class="socialMediaElement">
+                    </div>
+                    <img src="assets/images/line.png" alt="line" class="lineContacts">
+                    <p class="marginBottom0">2021 (c) - Tamwyle</p>
                 </div>
-                <img src="assets/images/line.png" alt="line" style="width: 70px">
-                <p>2021 (c) - Tamwyle</p>
-            </div>
-            <div class="contactsColumn">
-                <p>Наши услуги</p>
-                <p>Сайт с нуля</p>
-                <p>Ребрендинг</p>
-                <p>Дизайн</p>
-                <p>Верстка</p>
-            </div>
-            <div class="contactsColumn">
-                <p>Команда</p>
-                <p>Front-end</p>
-                <p>Back-end</p>
-                <p>Design</p>
-                <p>SMM</p>
-            </div>
-            <div class="contactsColumn">
-                <p>Портфолио</p>
-                <p>Сайты</p>
-                <p>Логотипы</p>
-            </div>
-            <div class="contactsColumn">
-                <p>О нас</p>
-                <p>Найти нас</p>
-            </div>
-            <div class="contactsColumn">
-                <p>Контакты</p>
-                <p>ifrunza36@gmail.com</p>
-                <p>+380982261306</p>
+                <div class="contactsColumn">
+                    <ul class="ulContacts">
+                        <li class="liMainContacts">Наши услуги</li>
+                        <li class="liContacts">Сайт с нуля</li>
+                        <li class="liContacts">Ребрендинг</li>
+                        <li class="liContacts">Дизайн</li>
+                        <li class="liContacts">Верстка</li>
+                    </ul>
+                </div>
+                <div class="contactsColumn">
+                    <ul class="ulContacts">
+                        <li class="liMainContacts">Команда</li>
+                        <li class="liContacts">Front-end</li>
+                        <li class="liContacts">Back-end</li>
+                        <li class="liContacts">Design</li>
+                        <li class="liContacts">SMM</li>
+                    </ul>
+                </div>
+                <div class="contactsColumn">
+                    <ul class="ulContacts">
+                        <li class="liMainContacts">Портфолио</li>
+                        <li class="liContacts">Сайты</li>
+                        <li class="liContacts">Логотипы</li>
+                    </ul>
+                </div>
+                <div class="contactsColumn">
+                    <ul class="ulContacts">
+                        <li class="liMainContacts">О нас</li>
+                        <li class="liContacts">Найти нас</li>
+                    </ul>
+                </div>
+                <div class="contactsColumn">
+                    <ul class="ulContacts">
+                        <li class="liMainContacts">Контакты</li>
+                        <li class="liContacts">ifrunza36@gmail.com</li>
+                        <li class="liContacts">+380982261306</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
+    </footer>
 </main>
 </body>
 </html>

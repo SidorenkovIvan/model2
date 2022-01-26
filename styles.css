@@ -1,6 +1,6 @@
 @font-face {
     font-family: "PT Sans Narrow";
-    src: url("https://fonts.google.com/specimen/PT+Sans+Narrow");
+    src: url(assets/fonts/PTSansNarrow-Regular.ttf);
 }
 
 body {
@@ -17,11 +17,28 @@ a {
     color: black;
 }
 
-.mainNav {
+.greenColorForText {
+    color: #3BB372;
+}
+
+.blueColorForText {
+    color: #398495;
+}
+
+.navMain {
+    justify-content: flex-end;
+}
+
+.ulHeaderNav {
     list-style-type: none;
 }
 
-.mainLi {
+.liContact {
+    background-color: #3BB372;
+    margin-right: 0;
+}
+
+.liHeaderNav {
     margin: 50px 50px 0 50px;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 20px;
@@ -68,7 +85,7 @@ a {
     margin-top: 100px;
 }
 
-.servicesLi {
+.liServicesCreatingSite {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 24px;
     line-height: 42px;
@@ -79,7 +96,7 @@ a {
     color: black;
 }
 
-.servicesLi1 {
+.liServicesRebranding {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 24px;
     line-height: 42px;
@@ -122,25 +139,20 @@ a {
     margin-left: 30px;
 }
 
-.liContacts {
-    background-image: url(assets/images/buttonContacts.png);
-    margin-right: 0;
-}
-
 .spotTitle {
     margin: 0 0 -410px -30px;
 }
 
 .pTamwyle {
     color: #3BB372;
-    font-size: 24px;
+    font-size: 28px;
     margin-bottom: -60px;
     margin-top: 60px;
 }
 
 .pTeamWeb {
-    font-size: 64px;
-    line-height: 60px;
+    font-size: 72px;
+    line-height: 54px;
 }
 
 .pTeamWebDescription {
@@ -150,12 +162,12 @@ a {
 
 .pAboutUs {
     margin-left: 150px;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
 }
 
 .pAboutUsText {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .landing2 {
@@ -174,7 +186,7 @@ a {
 .pOurServices {
     margin-right: 50px;
     margin-top: 150px;
-    font-size: 40px;
+    font-size: 48px;
     font-weight: bold;
     text-align: right;
 }
@@ -182,7 +194,7 @@ a {
 .pTeam {
     margin-left: 170px;
     margin-top: -150px;
-    font-size: 38px;
+    font-size: 48px;
     font-weight: bold;
 }
 
@@ -194,12 +206,12 @@ a {
 .pPortfolio {
     margin-left: 160px;
     margin-top: -120px;
-    font-size: 38px;
+    font-size: 48px;
     font-weight: bold
 }
 
 .spotPortfolio {
-    margin-left: 150px;
+    margin-left: 140px;
     margin-top: 150px;
 }
 
@@ -254,8 +266,8 @@ a {
 .elementsOfContacts {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    margin-top: -230px;
-    margin-left: 40px;
+    margin-top: -200px;
+    margin-left: 20px;
     justify-items: center;
 }
 
@@ -264,7 +276,125 @@ a {
     flex-direction: column;
 }
 
+.contactsFirstColumn {
+    align-items: center;
+}
+
 .socialMediasRow {
     display: flex;
     flex-direction: row;
+}
+
+.socialMediaElement {
+    width: 30px;
+    margin: 0 10px;
+}
+
+.lineContacts {
+    margin-top: 10px;
+    width: 70px;
+    height: 2px;
+}
+
+.ulContacts {
+    list-style-type: none;
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+.liMainContacts {
+    font-size: 24px;
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+
+.liContacts {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.tamwyleContacts {
+    font-size: 28px;
+    color: #398495;
+    line-height: 10px;
+}
+
+.marginBottom0 {
+    margin-bottom: 0;
+}
+
+.buttonOrderProject {
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    width: 160px;
+    background-image: url(assets/images/rectangle.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: contain;
+    font-size: 16px;
+    font-family: "PT Sans Narrow", sans-serif;
+    border-radius: 5px;
+    border: none;
+}
+
+.buttonPortfolio {
+    padding: 10px;
+    color: black;
+    background-color: white;
+    border: 2px solid #398495;
+    border-radius: 5px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.spotAboutUs {
+    margin: 80px 0 -180px 80px;
+}
+
+.fontSizeTitle {
+    font-size: 48px;
+}
+
+.fontSize28 {
+    font-size: 28px;
+}
+
+.fontSize42 {
+    font-size: 42px;
+}
+
+.fontSize36 {
+    font-size: 36px;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.imageLaptop2 {
+    margin-top: 40px;
+}
+
+.servicesBanner {
+    margin: 30px 20px 0 60px;
+    background: #398495;
+}
+
+.servicesBanner1 {
+    margin: 30px 60px 0 20px;
+    background: #3BB372;
+}
+.servicesTextMargin {
+    margin-top: -20px;
+}
+
+.footerLogoWidth {
+    width: 50px;
 }
