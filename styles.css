@@ -34,8 +34,12 @@ a {
 }
 
 .liContact {
-    background-color: #3BB372;
-    margin-right: 0;
+    background-image: url(assets/images/buttonContact.svg);
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 50px;
+    color: white;
+    background-size: contain;
 }
 
 .liHeaderNav {
@@ -247,7 +251,7 @@ a {
 
 .spotContacts {
     float: right;
-    margin: -80px 100px 0 -280px;
+    margin: -80px 80px 0 -280px;
 }
 
 .pContacts {
@@ -323,29 +327,33 @@ a {
 }
 
 .buttonOrderProject {
-    position: relative;
-    padding: 10px 10px 10px 10px;
+    padding: 25px;
     color: white;
-    width: 160px;
-    background-image: url(assets/images/rectangle.svg);
+    width: 150px;
+    background-image: url(assets/images/buttonOrderProjectGreen.svg);
     background-repeat: no-repeat;
     background-color: white;
     background-size: contain;
+    background-position: center;
     font-size: 16px;
     font-family: "PT Sans Narrow", sans-serif;
-    border-radius: 5px;
     border: none;
+    margin-top: 20px;
 }
 
 .buttonPortfolio {
-    padding: 10px;
+    padding: 25px;
     color: black;
+    width: 150px;
+    background-image: url(assets/images/buttonPortfolioBlue.svg);
+    background-repeat: no-repeat;
     background-color: white;
-    border: 2px solid #398495;
-    border-radius: 5px;
-    font-family: "PT Sans Narrow", sans-serif;
+    background-size: contain;
+    background-position: center;
     font-size: 16px;
-    margin-left: 20px;
+    font-family: "PT Sans Narrow", sans-serif;
+    border: none;
+    margin-top: 20px;
 }
 
 .spotAboutUs {
@@ -397,4 +405,26 @@ a {
 
 .footerLogoWidth {
     width: 50px;
+}
+
+.buttonOrderProjectBlue {
+    background-image: url(assets/images/buttonOrderProjectBlue.svg);
+}
+
+.buttonPortfolioGreen {
+    background-image: url(assets/images/buttonPortfolioGreen.svg);
+}
+
+.buttonOrderProjectWhiteGreen {
+    background-image: url(assets/images/buttonOrderProjectWhite.svg);
+    background-color: #3BB372;
+    color: #398495;
+    margin: 0;
+}
+
+.buttonOrderProjectWhiteBlue {
+    background-image: url(assets/images/buttonOrderProjectWhite.svg);
+    background-color: #398495;
+    color: #398495;
+    margin: 0;
 }
