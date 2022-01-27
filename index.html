@@ -8,7 +8,7 @@
 <body>
 <header>
     <div class="rowNav">
-        <div>
+        <div class="gridForLogo">
             <img src="assets/images/spotLogo.png" alt="spot" class="spotLogo">
             <img src="assets/images/logo.svg" alt="logo" class="logo">
             <img src="assets/images/logoShadow.png" alt="shadow" class="logoShadow">
@@ -37,7 +37,7 @@
                 сделать<br> продающий сайт</p>
             <button class="buttonOrderProject">Заказать проект</button>
             <button class="buttonPortfolio">Портфолио</button>
-            <img src="assets/images/line.png" alt="line">
+            <img src="assets/images/line.png" alt="line" class="lineInTitle">
             <img src="assets/images/buttonTelegram.png" alt="telegram" class="buttonTelegramAndInstagram">
             <img src="assets/images/buttonInstagram.png" alt="instagram" class="buttonTelegramAndInstagram">
         </div>
@@ -49,8 +49,10 @@
     </div>
 
     <div id="aboutUs">
-        <img src="assets/images/spotAboutUs.png" alt="spot" class="spotAboutUs">
-        <p class="pAboutUs">О нас</p>
+        <div class="gridForTitleAboutUs">
+            <img src="assets/images/spotAboutUs.png" alt="spot" class="spotAboutUs">
+            <p class="pAboutUs">О нас</p>
+        </div>
         <div class="rowAboutUs">
             <img src="assets/images/memoji1.png" alt="memoji">
             <p class="pAboutUsText"><span class="fontSize28">Кто мы</span><br><br>Мы новая команда<br>разработчиков,
@@ -65,20 +67,25 @@
     </div>
 
     <div id="ourServices">
-        <img src="assets/images/spotOurServices.png" alt="spot" class="spotOurServices">
-        <p class="pOurServices">Наши услуги</p>
+        <div class="gridForTitleServices">
+            <img src="assets/images/spotOurServices.png" alt="spot" class="spotOurServices">
+            <p class="pOurServices">Наши услуги</p>
+        </div>
         <div class="services">
             <img src="assets/images/laptop1.png" alt="image">
             <div class="flexColumn">
-                <p class="fontSize42">Создание сайта с <span class="greenColorForText">нуля</span></p>
+                <p class="fontSize42 textAlignCenter">Создание сайта с <span class="greenColorForText">нуля</span></p>
                 <ul class="servicesUl">
-                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Быстро и красиво оформим дизайн.</span></li>
+                    <li class="liServicesCreatingSite"><span
+                            class="servicesLiSpan">Быстро и красиво оформим дизайн.</span></li>
                     <li class="liServicesCreatingSite"><span class="servicesLiSpan">Адаптивный дизайн.</span></li>
                     <li class="liServicesCreatingSite"><span class="servicesLiSpan">Запоминающийся сайт.</span></li>
-                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Продаваемый и удобный сайт.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Продаваемый и удобный сайт.</span>
+                    </li>
                     <li class="liServicesCreatingSite"><span class="servicesLiSpan">Быстрые сроки работы.</span></li>
                     <li class="liServicesCreatingSite"><span class="servicesLiSpan">Поставим на хост.</span></li>
-                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Работа с СММ специалистом.</span></li>
+                    <li class="liServicesCreatingSite"><span class="servicesLiSpan">Работа с СММ специалистом.</span>
+                    </li>
                 </ul>
                 <div class="flexRow">
                     <button class="buttonOrderProject">Заказать проект</button>
@@ -86,14 +93,17 @@
                 </div>
             </div>
             <div class="flexColumn">
-                <p class="blueColorForText fontSize42">Ребрендинг</p>
+                <p class="blueColorForText fontSize42 textAlignCenter">Ребрендинг</p>
                 <ul class="servicesUl">
-                    <li class="liServicesRebranding"><span class="servicesLiSpan">Сделаем дизайн, продаваемым.</span></li>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Сделаем дизайн, продаваемым.</span>
+                    </li>
                     <li class="liServicesRebranding"><span class="servicesLiSpan">Практичным для клиента.</span></li>
-                    <li class="liServicesRebranding"><span class="servicesLiSpan">Запоминающимся и эффективным.</span></li>
+                    <li class="liServicesRebranding"><span class="servicesLiSpan">Запоминающимся и эффективным.</span>
+                    </li>
                     <li class="liServicesRebranding"><span class="servicesLiSpan">Быстро и качественно проделаная работа.</span>
                     </li>
-                    <li class="liServicesRebranding"><span class="servicesLiSpan">Универсальный дизайн с адаптацией.</span></li>
+                    <li class="liServicesRebranding"><span
+                            class="servicesLiSpan">Универсальный дизайн с адаптацией.</span></li>
                     <li class="liServicesRebranding"><span class="servicesLiSpan">Оптимизация сайта.</span></li>
                     <li class="liServicesRebranding"><span class="servicesLiSpan">Возможность работать с СММ специалистом</span>
                     </li>
@@ -122,24 +132,30 @@
     </div>
 
     <div id="team">
-        <img src="assets/images/spotOurTeam.png" alt="spot" class="spotTeam">
-        <p class="pTeam">Наша команда</p>
+        <div class="gridForTitleTeam">
+            <img src="assets/images/spotOurTeam.png" alt="spot" class="spotTeam">
+            <p class="pTeam">Наша команда</p>
+        </div>
     </div>
 
     <div id="portfolio">
-        <img src="assets/images/spotPortfolio.png" alt="spot" class="spotPortfolio">
-        <p class="pPortfolio">Портфолио</p>
-        <img src="assets/images/rectanglePortfolio.png" alt="rectangle" class="rectanglePortfolio">
-        <p class="rectanglePortfolioText">Портфолио логотипов</p>
+        <div class="gridForTitlePortfolio">
+            <img src="assets/images/spotPortfolio.png" alt="spot" class="spotPortfolio">
+            <p class="pPortfolio">Портфолио</p>
+        </div>
+        <div class="gridForPortfolioBanner">
+            <img src="assets/images/rectanglePortfolio.png" alt="rectangle" class="rectanglePortfolio">
+            <p class="rectanglePortfolioText">Портфолио логотипов</p>
+        </div>
         <div class="portfolioItems">
-            <img src="assets/images/portfolioItem.png" alt="profileItem">
+            <img src="assets/images/portfolioItem.svg" alt="profileItem" class="portfolioItemImage">
             <p class="portfolioItemText"><span class="fontSize36">Samwyle</span><br><br>Дизайн сайта был
                 опубликован в 2021 году.
-                Сразу после публикации занял 12 место в тренде Figma community.<br>
+                Сразу после публикации занял 12 место в тренде Figma community.
                 Весь дизайн сайта с адаптацией сделан за 8 часов работы.</p>
-            <img src="assets/images/portfolioItem1.png" alt="profileItem1">
+            <img src="assets/images/portfolioItem1.svg" alt="profileItem1" class="portfolioItemImage">
             <p class="portfolioItemText"><span class="fontSize36">Tamwyle</span><br><br>Дизайн был разработан
-                специально для нашей команды.<br>
+                специально для нашей команды.
                 Интуитивный, удобный и не напрягающий дизайн.
                 Сделан дизайн сайта с адаптацией за 6 часов работы.</p>
         </div>
@@ -147,8 +163,10 @@
 
     <footer>
         <div id="contacts">
-            <img src="assets/images/spotContacts.png" alt="spot" class="spotContacts">
-            <p class="pContacts">Контакты</p>
+            <div class="gridForTitleContacts">
+                <img src="assets/images/spotContacts.png" alt="spot" class="spotContacts">
+                <p class="pContacts">Контакты</p>
+            </div>
             <img src="assets/images/spotAllContacts.png" alt="spot" class="spotAllContacts">
             <div class="elementsOfContacts">
                 <div class="contactsColumn contactsFirstColumn">
@@ -170,7 +188,7 @@
                         <li class="liContacts">Верстка</li>
                     </ul>
                 </div>
-                <div class="contactsColumn">
+                <div class="contactsColumn contactsTeamColumn">
                     <ul class="ulContacts">
                         <li class="liMainContacts">Команда</li>
                         <li class="liContacts">Front-end</li>
@@ -186,7 +204,7 @@
                         <li class="liContacts">Логотипы</li>
                     </ul>
                 </div>
-                <div class="contactsColumn">
+                <div class="contactsColumn contactsAboutUsColumn">
                     <ul class="ulContacts">
                         <li class="liMainContacts">О нас</li>
                         <li class="liContacts">Найти нас</li>

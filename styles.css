@@ -33,14 +33,14 @@ a {
     list-style-type: none;
 }
 
-.liContact {
-    background-image: url(assets/images/buttonContact.svg);
-    background-repeat: no-repeat;
-    width: 120px;
-    height: 50px;
-    color: white;
-    background-size: contain;
-}
+/*.liContact {*/
+/*    background-image: url(assets/images/buttonContact.svg);*/
+/*    background-repeat: no-repeat;*/
+/*    width: 120px;*/
+/*    height: 50px;*/
+/*    color: white;*/
+/*    background-size: contain;*/
+/*}*/
 
 .liHeaderNav {
     margin: 50px 50px 0 50px;
@@ -61,7 +61,8 @@ a {
 }
 
 .buttonTelegramAndInstagram {
-    margin: 5px;
+    width: 30px;
+    margin: 0 10px -12px 10px;
 }
 
 .columnTitle {
@@ -74,9 +75,28 @@ a {
     margin-top: -60px;
 }
 
+.gridForTitleAboutUs {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.spotAboutUs {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.pAboutUs {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 48px;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
 .rowAboutUs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     justify-items: center;
     align-items: center;
     margin-top: 100px;
@@ -84,7 +104,7 @@ a {
 
 .services {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     margin-top: 100px;
 }
@@ -124,18 +144,30 @@ a {
     line-height: 30px;
 }
 
+.gridForLogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .logo {
-    position: absolute;
-    margin: 50px 0 0 -180px;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
 }
 
 .logoShadow {
-    position: absolute;
-    margin: 50px 0 0 -220px;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .spotLogo {
-    margin: -10px;
+    grid-column: 1;
+    grid-row: 1;
 }
 
 .spotNav {
@@ -164,12 +196,6 @@ a {
     margin-top: -40px;
 }
 
-.pAboutUs {
-    margin-left: 150px;
-    font-size: 48px;
-    font-weight: bold;
-}
-
 .pAboutUsText {
     font-size: 24px;
 }
@@ -182,84 +208,126 @@ a {
     margin-right: 50px;
 }
 
+.gridForTitleServices {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: 50px;
+}
+
 .spotOurServices {
-    float: right;
-    margin: -80px 100px 0 -280px;
+    grid-column: 7;
+    grid-row: 1;
 }
 
 .pOurServices {
-    margin-right: 50px;
-    margin-top: 150px;
     font-size: 48px;
     font-weight: bold;
-    text-align: right;
+    grid-column: 7;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    white-space: nowrap;
+}
+
+.gridForTitleTeam {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .pTeam {
-    margin-left: 170px;
-    margin-top: -150px;
+    grid-column: 2;
+    grid-row: 1;
     font-size: 48px;
     font-weight: bold;
+    padding-left: 30px;
+    white-space: nowrap;
 }
 
 .spotTeam {
-    margin-left: 150px;
-    margin-top: 150px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.gridForTitlePortfolio {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    margin-top: 60px;
 }
 
 .pPortfolio {
-    margin-left: 160px;
-    margin-top: -120px;
+    grid-column: 2;
+    grid-row: 1;
     font-size: 48px;
-    font-weight: bold
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 20px;
 }
 
 .spotPortfolio {
-    margin-left: 140px;
-    margin-top: 150px;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.gridForPortfolioBanner {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .rectanglePortfolio {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 130px;
-    display: block;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: center;
 }
 
 .rectanglePortfolioText {
-    text-align: center;
-    margin-top: -110px;
+    grid-row: 1;
+    grid-column: 1;
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 42px;
     color: white;
+    justify-self: center;
+    padding-top: 20px;
 }
 
 .portfolioItems {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 75%;
-    margin: 75px auto;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    align-self: center;
+}
+
+.portfolioItemImage {
+    margin-top: 30px;
+    padding-right: 30px;
+    grid-column: 2;
 }
 
 .portfolioItemText {
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 20px;
     line-height: 30px;
+    grid-column: 3;
+    padding-left: 30px;
+}
+
+.gridForTitleContacts {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
 .spotContacts {
-    float: right;
-    margin: -80px 80px 0 -280px;
+    grid-row: 1;
+    grid-column: 7;
 }
 
 .pContacts {
-    margin-right: 120px;
-    margin-top: 50px;
-    font-size: 40px;
+    grid-row: 1;
+    grid-column: 7;
+    font-size: 48px;
     font-weight: bold;
-    text-align: right;
+    align-self: center;
+    justify-self: center;
 }
 
 .spotAllContacts {
@@ -356,10 +424,6 @@ a {
     margin-top: 20px;
 }
 
-.spotAboutUs {
-    margin: 80px 0 -180px 80px;
-}
-
 .fontSizeTitle {
     font-size: 48px;
 }
@@ -427,4 +491,155 @@ a {
     background-color: #398495;
     color: #398495;
     margin: 0;
+}
+
+@media only screen and (max-device-width: 500px) {
+    .rowNav {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .gridForLogo {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .logoShadow {
+        display: none;
+    }
+
+    .spotLogo {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .spotLogo {
+        transform: rotate(45deg);
+    }
+
+    .logo {
+        position: absolute;
+    }
+
+    .logoShadow {
+        justify-content: center;
+    }
+
+    .columnLandings {
+        display: none;
+    }
+
+    .navMain {
+        display: none;
+    }
+
+    .spotNav {
+        display: none;
+    }
+
+    .spotTitle {
+        display: none;
+    }
+
+    .rowTitle {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .columnTitle {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .rowAboutUs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .services {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesBanner {
+        margin: 40px;
+    }
+
+    .servicesBanner1 {
+        margin: 40px;
+    }
+
+    .rectanglePortfolio {
+        padding-top: 30px;
+        width: 90%;
+    }
+
+    .rectanglePortfolioText {
+        white-space: nowrap;
+    }
+
+    .flexColumn {
+        justify-items: center;
+    }
+
+    .flexRow {
+        justify-content: center;
+    }
+
+    .portfolioItems {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolioItemText {
+        grid-column: 1;
+        padding: 15px 40px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .portfolioItemImage {
+        grid-column: 1;
+        padding: 15px 40px;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .elementsOfContacts {
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .spotAllContacts {
+        display: none;
+    }
+
+    .textAlignCenter {
+        text-align: center;
+    }
+
+    .contactsTeamColumn {
+        display: none;
+    }
+
+    .contactsAboutUsColumn {
+        display: none;
+    }
+
+    .buttonTelegramAndInstagram {
+        display: none;
+    }
+
+    .lineInTitle {
+        display: none;
+    }
 }
