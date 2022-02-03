@@ -101,6 +101,7 @@ a {
     justify-items: center;
     align-items: center;
     margin-top: 100px;
+    padding: 0 10px;
 }
 
 .services {
@@ -444,6 +445,10 @@ a {
     font-size: 36px;
 }
 
+.fontSize32 {
+    font-size: 32px;
+}
+
 .flexColumn {
     display: flex;
     flex-direction: column;
@@ -496,6 +501,72 @@ a {
     background-color: #398495;
     color: #398495;
     margin: 0;
+}
+
+.wrap {
+    margin: 50px auto;
+    width: 80%;
+}
+.b-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.flexRowForCarousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.b-carousel__prev,
+.b-carousel__next {
+    width: 50px;
+    height: 78px;
+    margin-top: 100px;
+    border: none;
+    overflow: hidden;
+    background-color: #ffffff;
+    transform: translateY(-50%);
+}
+
+.b-carousel__next {
+    background-image: url(assets/images/buttonForCarouselNext.svg);
+    margin-left: 65px;
+}
+
+.b-carousel__prev {
+    background-image: url(assets/images/buttonCarouselPrevious.svg);
+    margin-right: 65px;
+}
+
+.b-carousel__wrap {
+    display: flex;
+    transition: transform .5s;
+    will-change: transform;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.b-carousel__item {
+    flex: 0 0 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.b-carousel__img {
+    width: 50%;
+    height: 100%;
+    display: block;
+}
+
+.pTeamTextItem {
+    padding: 0 40px;
 }
 
 @media only screen and (max-device-width: 500px) {
